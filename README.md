@@ -1,5 +1,5 @@
 # Steamworks-Platform
-Unity interface ISocialPlatform implementation with Steamworks.NET.
+Unity interface ISocialPlatform implementation using Steamworks.NET.
 * [Unity®](https://unity3d.com) is a trademark of Unity Technologies.
 * Steamworks is a trademark of Valve®.
 * [Steamworks.NET](https://github.com/rlabrecque/Steamworks.NET) is a C# Wrapper for Valve's Steamworks API
