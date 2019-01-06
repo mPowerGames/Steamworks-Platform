@@ -1,5 +1,5 @@
 # Steamworks-Platform
-Unity interface ISocialPlatform implementation with Steamworks.NET. 
+Unity interface ISocialPlatform implementation with Steamworks.NET.
 Copyright (c) 2018-2019 Alex Dovgodko
 
 * [Unity®](https://unity3d.com) is a trademark of Unity Technologies.
