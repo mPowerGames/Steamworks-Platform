@@ -1,5 +1,5 @@
 # Steamworks-Platform
-Unity interface ISocialPlatform implementation with Steamworks.NET
+Unity interface ISocialPlatform implementation with Steamworks.NET. C
 
 * [Unity®](https://unity3d.com) is a trademark of Unity Technologies.
 * Steamworks is a trademark of Valve®.
@@ -26,4 +26,4 @@ As the functionality of the ISocialPlatform and Steamworks API are not idealy fi
 * Achievements can not be completed directly (using IAchievement.completed), you will have to set it's progress to 100% with IAchievement.percentCompleted.
 * Leaderboards are not implemented yet.
 * ISocialPlatform.LoadFriends will downoload a list of friends for the localUser that have already installed and played your game.
-* To use a friend picture you have to download it with an async call to MPG.SocialPlatforms.SteamworksUserProfile.DownloadImage.
+* To acquire a friend picture you have to download it with an async call to MPG.SocialPlatforms.SteamworksUserProfile.DownloadImage.
