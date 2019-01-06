@@ -19,6 +19,11 @@ More features may be supported lately.
 6. On the appeared panel find a text field: __Other Settings -> Scripting Define Symbols__ and add there: *STEAM*
 ## Demo Scene
 The the package contains the demo scene that you may use to see some basic usage of the available features.
-To run it you need to have the Steam client running.
+To run it you need to have the Steam client running. The demo scene is using a demo game from Steam (called Spacewar), so you may play with the available features and see how they are working. The only exception is a friends loading system as it is not directly supported by Steam and is implemented using some sort of a trick with leaderbord. So to test this feature you will have to launch the demo scene on the other Steam account which is in your a friend list.
 ## Limitations
 As the functionality of the ISocialPlatform and Steamworks API are not idealy fit each other, some of the implemented features are supported with certain limitations.
+* To use achievements, you have to use Social.Active.LoadAchievements (creating achievements localy is not supported).
+* Achievements can not be completed directly (using IAchievement.completed), you will have to set it's progress to 100% with IAchievement.percentCompleted.
+* Leaderboards are not implemented yet.
+* ISocialPlatform.LoadFriends will downoload a list of friends for the localUser that have already installed and played your game.
+
