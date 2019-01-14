@@ -9,6 +9,7 @@ Steamworks Platform implements some features of the ISocialPlatform interface an
 * Steam authorization and 
 * Achievements loading and reporting
 * Loading a friend list and acessing their profiles data (name and picture)
+
 More features may be supported lately.
 ## Installation
 1. First of all you already have to fulfill all the requirements of Steamworks.NET and [install it](http://steamworks.github.io/installation/).
