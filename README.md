@@ -12,7 +12,7 @@ Steamworks Platform implements some features of the ISocialPlatform interface an
 
 More features may be supported lately.
 ## Installation
-1. First of all you already have to fulfill all the requirements of Steamworks.NET and [install it](http://steamworks.github.io/installation/).
+1. First of all you have to fulfill all the requirements of Steamworks.NET and [install it](http://steamworks.github.io/installation/).
 2. Download the package from [build\SteamworksSocial.unitypackage](https://github.com/mPowerGames/Steamworks-Platform/blob/master/Build/SteamworksSocial.unitypackage).
 3. Launch Unity and open the project where you have already installed Steamworks.NET. 
 4. In Unity import Steamworks Platform unitypackage by using main menu: __Assets -> Import Package -> Custom Package__ and confirm the import dialog.
