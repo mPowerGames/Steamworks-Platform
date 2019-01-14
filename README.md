@@ -26,5 +26,5 @@ As the functionality of the ISocialPlatform and Steamworks API are not idealy fi
 * To use achievements, you have to use Social.Active.LoadAchievements (creating achievements localy is not supported).
 * Achievements can not be completed directly (using IAchievement.completed), you will have to set it's progress to 100% with IAchievement.percentCompleted.
 * Leaderboards are not implemented yet.
-* ISocialPlatform.LoadFriends will downoload a list of friends for the localUser that have already installed and played your game.
+* ISocialPlatform.LoadFriends will download a list of friends for the localUser that have already installed and played your game.
 * To acquire a friend picture you have to download it with an async call to MPG.SocialPlatforms.SteamworksUserProfile.DownloadImage.
