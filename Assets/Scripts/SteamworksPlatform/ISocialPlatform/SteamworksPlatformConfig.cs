@@ -43,7 +43,13 @@ namespace MPG.SocialPlatforms
 				getStatName);
 
 			//Initialize Unity social platform with Steam platform. Steam client must be already running.
-			SteamworksPlatform.Initialize(new GameObject("SteamPlatform"));
+			GameObject go = GameObject.Find("SteamPlatform");
+			if (go == null)
+			{
+				go = new GameObject("SteamPlatform");
+				MonoBehaviour.DontDestroyOnLoad(go);
+				SteamworksPlatform.Initialize(go);
+			}
 		}
 
 		/// <summary>
