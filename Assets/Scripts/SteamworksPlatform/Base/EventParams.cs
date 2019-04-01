@@ -1,11 +1,6 @@
 ﻿// This file is provided under The MIT License as part of ISocialPlatform implementation
 // Copyright (c) 2018-2019 Alex Dovgodko
 // Please see the included LICENSE.txt for additional information.
-#if UNITY_ANDROID || UNITY_IOS || UNITY_TIZEN || UNITY_TVOS || UNITY_WEBGL || UNITY_WSA || UNITY_PS4 || UNITY_WII || UNITY_XBOXONE || UNITY_SWITCH
-#define DISABLESTEAMWORKS
-#endif
-
-#if !DISABLESTEAMWORKS
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -101,4 +96,3 @@ namespace MPG.SocialPlatforms
 
 	}
 }
-#endif //!DISABLESTEAMWORKS
