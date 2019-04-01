@@ -259,7 +259,7 @@ namespace MPG.SocialPlatforms
 			//Log.warning("SteamworksPlatform.OnUserStatsReceived: eResult = " + param.m_eResult + " nGameID = " + 
 			//			param.m_nGameID + " steamIDUser = " + param.m_steamIDUser);
 		
-			uint achivementsCount = SteamUserStats.GetNumAchievements() - 1;			
+			uint achivementsCount = SteamUserStats.GetNumAchievements();
 			int val = 0;
 			float dVal = 0;
             string statName = string.Empty;
@@ -593,6 +593,22 @@ namespace MPG.SocialPlatforms
 				SteamFriends.ActivateGameOverlay("Friends");
 			else
 				SteamFriends.ActivateGameOverlayToUser("chat", user.SteamID);
+		}
+		
+		/// <summary>
+		/// Reset all game achievements in Steam (for testing purpose).
+		/// Note: in a case of error "SteamworksPlatform.OnUserStatsStored: eResult = k_EResultInvalidParam"
+		/// check your Stats constraints settings (Increment Only?, Max Change, Min Change, Max Value)
+		/// </summary>
+		public void ResetAllAchievements()
+		{
+			if (!SteamManager.Initialized)
+			{
+				return;
+			}
+			
+			SteamUserStats.ResetAllStats(true);
+			SteamUserStats.RequestCurrentStats();
 		}
 	}
 }
