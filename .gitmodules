@@ -1,6 +1,3 @@
-[submodule "Assets/Scripts/SocialPlatform-Core"]
-	path = Assets/Scripts/SocialPlatform-Core
-	url = https://github.com/mPowerGames/SocialPlatformCore.git
 [submodule "Assets/Scripts/SocialPlatformCore"]
 	path = Assets/Scripts/SocialPlatformCore
 	url = https://github.com/mPowerGames/SocialPlatformCore.git
